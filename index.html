@@ -1,84 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhaya Bikram Shahi</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="navbar">
-    <div class="nevigation-bar">
-     <div class="wrap-nav">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhaya Bikram Shahi</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./animation.css" />
+  </head>
+
+  <body>
+    <!-- Header section -->
+    <header class="container">
       <div class="logo">
-        <h2>Abhaya Bikram Shahi</h2>
+        <a href="#"><h1>Abhaya Bikram Shahi</h1></a>
       </div>
-      <div class="lsit">
+
+      <nav>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
-          <div class="dropdown">
-            <a href="#" onclick="toggleDropdown()" class="drop">Others</a>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="#">Code To Earn (C2E)</a>
-              <a href="#">Gorkha Dev</a>
-              <a href="#">Dhanu Academy</a>
-            </div>
-          </div>
-          
+          <li class="has-sub-menu">
+            <span>Others</span>
+            <ul class="sub-menu">
+              <li><a href="#" class="sub-menu-link">Code To Earn (C2E)</a></li>
+              <li><a href="#" class="sub-menu-link">Gorkha Dev</a></li>
+              <li><a href="#" class="sub-menu-link">Dhanu Academy</a></li>
+            </ul>
+          </li>
         </ul>
-      </div>
-      <div class="button">
+      </nav>
+
+      <div class="get-started">
         <button>Get Started</button>
       </div>
-     </div>
-    </div>
-  </div>
+    </header>
 
-  <!-- hero -->
+    <!-- Hero Section -->
+    <section class="container hero">
+      <div class="hero-desc">
+        <div class="hero-desc-head">
+          <h2>
+            The well-known experienced <span>Web Developer</span>.
+            <br />
+            <p>I can code in <span id="dynamic-language">HTML</span></p>
+          </h2>
+        </div>
 
-  <div class="contanier">
-    <div class="hero">
-      <div class="des-hero">
-        <h1>The well-known Experienced web developer. I can code .</h1> 
-        
-        <!-- <span id="dynamicLanguage">HTML</span> -->
-        <p>I am a well-known Experienced web developer since 2023.</p>
-        <div class="button">
-          <button class="hire">Hire me</button>
-          <button class="cv">Download CV</button>
+        <div class="hero-desc-body">
+          <div class="hero-btns">
+            <button class="download-cv">Download CV</button>
+            <button class="hire-me">Hire me</button>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="wrap">
-    <div class="about">
-      <div class="2nd-part">
-        <div class="left-side"></div>
-          <h2>About Me</h2>
-          <p>Abhaya Bikram Shahi, an upcoming web developer from Kalikot, Nepal has been polishing his skills since 2023. Only fifteen years of age and working as a dedicated techie, he is spearheading the itness in the society. With the help of Budh Ram Gurung and Sushant Rimal, he is learning and growing day by day. Also supporting his further improvement are team members Dev Gautam Kumar and Sakshyam Banajde who share their expertise and encouragement with him. As a result, they give more motivation to Abhaya to contact new ideas in web design and development and innovations in technology which will definitely pay off in his career.</p>
-  
-          <p>Abhaya Bikram Shahi is the founder of a company called Abhaya Solutions, which integrates his love for web designing and web developing. He is knowledgeable on HTML and CSS, but is currently learning JavaScript. Since design is his strong area of interest, Abhaya targets to build visually appealing and functional interfaces. He is eager to enhance and broaden his knowledge and experience in technology for both self and work. Besides his professional work, Abhaya works as a YouTuber and educates the people in broader perspectives in motivating them to pursue their interest in technology.</p>
+    </section>
+
+    <!-- About section -->
+    <section class="container about">
+      <h3>About Me</h3>
+
+      <div class="about-body">
+        <div class="about-left">
+          <p>
+            Abhaya Bikram Shahi, an upcoming web developer from Kalikot, Nepal
+            has been polishing his skills since 2023. Only fifteen years of age
+            and working as a dedicated techie, he is spearheading the itness in
+            the society. With the help of Budh Ram Gurung and Sushant Rimal, he
+            is learning and growing day by day. Also supporting his further
+            improvement are team members Dev Gautam Kumar and Sakshyam Banajde
+            who share their expertise and encouragement with him. As a result,
+            they give more motivation to Abhaya to contact new ideas in web
+            design and development and innovations in technology which will
+            definitely pay off in his career.
+          </p>
+          <p>
+            Abhaya Bikram Shahi is the founder of a company called Abhaya
+            Solutions, which integrates his love for web designing and web
+            developing. He is knowledgeable on HTML and CSS, but is currently
+            learning JavaScript. Since design is his strong area of interest,
+            Abhaya targets to build visually appealing and functional
+            interfaces. He is eager to enhance and broaden his knowledge and
+            experience in technology for both self and work. Besides his
+            professional work, Abhaya works as a YouTuber and educates the
+            people in broader perspectives in motivating them to pursue their
+            interest in technology.
+          </p>
         </div>
-        <div class="right-side">
-          <img src="abhayaa.jpg" alt="about me">
+        <div class="about-right">
+          <figure class="hero-avatar">
+            <img src="./assests/abhayaa.jpg" alt="Abhaya Bikram Shahi" />
+          </figure>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="form">
-    <div class="wrap-form">
-      <h2>Contact Me</h2>
-      <form action="https://formsubmit.co/your@email.com" method="POST">
-        <input type="text" name="name" placeholder="Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" placeholder="Message"></textarea>
-        <button type="submit" class="maal">Send</button>
-   </form>
-    </div>
-  </div>
-</body>
-<script src="script.js"></script>
+    <!-- Contact section -->
+    <section class="container contact">
+      <h3>Lets Get in Touch</h3>
+
+      <div class="form-wrapper">
+        <h2>Contact Me</h2>
+
+        <form action="" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Write some message here."
+          ></textarea>
+          <button type="submit" class="maal">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+  </body>
 </html>
