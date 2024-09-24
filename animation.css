@@ -1,0 +1,72 @@
+/* Transitions */
+header nav ul a:not(.sub-menu-link),
+header .has-sub-menu span {
+  transition-property: transform, color;
+}
+
+header nav ul a:not(.sub-menu-link):hover,
+header .has-sub-menu span:hover {
+  transform: translate3d(0, -0.75rem, 0);
+  color: var(--primary);
+}
+
+.has-sub-menu .sub-menu {
+  transition-property: transform, opacity, visibility;
+}
+
+.has-sub-menu:hover .sub-menu {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.sub-menu .sub-menu-link {
+  width: calc(300px - 4rem);
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 0.75rem;
+  transition-property: background-color, border;
+}
+
+.sub-menu .sub-menu-link:hover {
+  background-color: var(--mid-dark-2);
+  border: 2px solid var(--light-dark);
+}
+
+button {
+  transition-property: background-color, transform;
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+  transform: scale(1.05);
+}
+
+input,
+textarea {
+  transition-property: transform, border-color;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--primary);
+  transform: scale(1.02);
+}
+
+header nav ul a,
+header .has-sub-menu span,
+.has-sub-menu .sub-menu,
+.sub-menu .sub-menu-link,
+button,
+input,
+textarea {
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+/* Animations */
+@keyframes typewritter {
+  50% {
+    border-color: transparent;
+  }
+}
